@@ -1,0 +1,11 @@
+# conda env update -f environment.yml
+name: nandu
+channels:
+  - conda-forge
+dependencies:
+  - pip
+  - ipython
+  - jupyterlab
+  - owslib
+  
+ 
