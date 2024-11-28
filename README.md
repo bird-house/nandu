@@ -113,6 +113,10 @@ curl -X POST http://localhost:5000/processes/hello-world/execution \
      }'
 ```
 
+## Examples
+
+See usage examples for the processes in the notebooks folder.
+
 ## License
 
 This project is licensed under the Apache License version 2.
