@@ -113,6 +113,18 @@ curl -X POST http://localhost:5000/processes/hello-world/execution \
      }'
 ```
 
+## Development
+
+Run tests:
+```bash
+make test
+```
+
+Check coding style:
+```bash
+make lint
+```
+
 ## Examples
 
 See usage examples for the processes in the notebooks folder.
