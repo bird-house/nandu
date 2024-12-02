@@ -5,7 +5,6 @@
 # =================================================================
 
 
-import logging
 import os.path
 
 from werkzeug.test import create_environ

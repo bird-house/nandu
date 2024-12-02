@@ -75,10 +75,23 @@ clean-dist: clean
 	## do not use git clean -e/--exclude here, add them to .gitignore instead
 	@-git clean -dfx
 
+## Linting targets
+
+.PHONY: lint
+lint: ## check style with ruff
+	@echo "Running code style checks ..."
+	@bash -c 'ruff check nandu tests'
+
 ## Test targets
 
 .PHONY: test
 test:
 	@echo "Running tests (skip slow and online tests) ..."
 	@bash -c 'pytest -v -m "not slow and not online" tests/'
+
+## Docs targests
+
+.PHONY: docs
+docs: 
+	@echo "Sorry ... building docs is missing!"
 
