@@ -10,3 +10,4 @@ dependencies:
 - werkzeug<3.0
 # tests
 - pytest
+- ruff
