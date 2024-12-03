@@ -125,6 +125,11 @@ Check coding style:
 make lint
 ```
 
+Build docs:
+```bash
+make docs
+```
+
 ## Examples
 
 See usage examples for the processes in the notebooks folder.
