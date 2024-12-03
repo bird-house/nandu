@@ -103,9 +103,9 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
           cache: pip
-      - name: Install nandu with dev requirements 📦
+      - name: Install nandu with mkdocs 📦
         run: |
-          make install
+          python -m pip install mkdocs
       - name: Build Docs 📚
         run: |
           make docs
