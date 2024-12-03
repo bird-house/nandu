@@ -28,7 +28,7 @@ help:
 .PHONY: install
 install:
 	@echo "Installing application ..."
-	@-bash -c 'poetry install'
+	@-bash -c 'poetry install --with dev'
 	@echo "\nStart service with \`make start'"
 
 .PHONY: config
