@@ -11,3 +11,4 @@ dependencies:
 # tests
 - pytest
 - ruff
+- mkdocs
