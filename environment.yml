@@ -8,6 +8,7 @@ dependencies:
 - cleo<2.2.0
 - pygeoapi>=0.18.0
 - flask>=2.2.5
+- numpy<2
 # tests
 - pytest
 - ruff
