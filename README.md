@@ -14,24 +14,24 @@
 ## Quick Guide
 
 Clone the repository:
-```bash
+```console
 git clone https://github.com/cehbrecht/nandu.git
 cd nandu
 ```
 
 Create the Conda environment:
-```bash
+```console
 conda env create -f environment.yml
 conda activate nandu
 ```
 
 You can use make to run the installation:
-```bash
+```console
 make install
 ```
 
 ... and start the service:
-```bash
+```console
 make start
 ```
 
@@ -45,47 +45,47 @@ make start
 
 Clone the repository:
 
-```bash
+```console
 git clone https://github.com/cehbrecht/nandu.git
 cd nandu
 ```
 
 Create the Conda environment:
 
-```bash
+```console
 conda env create -f environment.yml
 conda activate nandu
 ```
 
 Install the project dependencies using Poetry:
-```bash
+```console
 poetry install
 ```
 
 ## Configuration
 
 Edit pygeoapi config (optional):
-```bash
+```console
 vim pygeoapi-config.yml
 ```
 
 Export paths to configs:
 
-```bash
+```console
 export PYGEOAPI_CONFIG=pygeoapi-config.yml
 export PYGEOAPI_OPENAPI=pygeoapi-openapi.yml 
 ```
 
 Update the OpenAPI configuration:
 
-```bash
+```console
 pygeoapi openapi generate $PYGEOAPI_CONFIG --output-file $PYGEOAPI_OPENAPI
 ```
 
 ## Usage
 
 Start the pygeoapi server and expose the processes:
-```bash
+```console
 pygeoapi serve
 ```
 
@@ -103,7 +103,7 @@ http://localhost:5000/processes/hello-world
 
 
 Execute the process:
-```bash
+```console
 curl -X POST http://localhost:5000/processes/hello-world/execution \
      -H "Content-Type: application/json" \
      -d '{
@@ -116,19 +116,23 @@ curl -X POST http://localhost:5000/processes/hello-world/execution \
 ## Development
 
 Run tests:
-```bash
+```console
 make test
 ```
 
 Check coding style:
-```bash
+```console
 make lint
 ```
 
 Build docs:
-```bash
+```console
 make docs
 ```
+
+## Release
+
+Please check the developer guide.
 
 ## Examples
 
@@ -139,12 +143,12 @@ See usage examples for the processes in the notebooks folder.
 You can also use a docker deployment. 
 
 Build images:
-```bash
+```console
 docker-compose build
 ```
 
 Start container:
-```bash
+```console
 docker-compose up
 ```
 

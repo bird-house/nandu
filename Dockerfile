@@ -1,6 +1,7 @@
 FROM geopython/pygeoapi:latest
 
 LABEL maintainer="Carsten Ehbrecht <ehbrecht@dkrz.de>"
+LABEL Description="nandu pygeoapi" Vendor="Birdhouse" Version="0.1.0"
 
 # Volume mapping cannot be used with webhook
 # https://github.com/maccyber/micro-dockerhub-hook
