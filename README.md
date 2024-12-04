@@ -134,6 +134,20 @@ make docs
 
 See usage examples for the processes in the notebooks folder.
 
+## Docker
+
+You can also use a docker deployment. 
+
+Build images:
+```bash
+docker-compose build
+```
+
+Start container:
+```bash
+docker-compose up
+```
+
 ## License
 
 This project is licensed under the Apache License version 2.

@@ -1,0 +1,12 @@
+version: '3'
+services:
+  pygeoapi:
+    build: .
+    image: birdhouse/nandu
+    ports:
+      - "5000:80"
+
+# docker-compose build
+# docker-compose up
+# docker-compose down
+# docker-compose rm
