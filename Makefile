@@ -82,7 +82,7 @@ clean-dist: clean
 .PHONY: lint
 lint: ## check style with ruff
 	@echo "Running code style checks ..."
-	@bash -c 'ruff check nandu tests'
+	@bash -c 'ruff check src tests'
 
 ## Test targets
 
