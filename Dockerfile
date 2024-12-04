@@ -11,4 +11,12 @@ COPY pygeoapi-config.yml /pygeoapi/local.config.yml
 
 # COPY ./demo.pygeoapi.io.cron /etc/cron.d/demo.pygeoapi.io.cron
 
-# RUN pip3 install pygeometa
+# Set the working directory to /code
+WORKDIR /code
+
+# Copy source code
+COPY . /code
+
+# Install
+RUN pip3 install poetry
+RUN poetry install
