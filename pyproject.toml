@@ -5,17 +5,15 @@ build-backend = "poetry.core.masonry.api"
 [tool.poetry]
 name = "nandu"
 version = "0.1.0"
-authors = [
-  {name = "Carsten Ehbrecht", email = "ehbrecht@dkrz.de"}
-]
+description = "OGC API - Processes example with pygeoapi"
+authors = ["Carsten Ehbrecht <ehbrecht@dkrz.de>"]
 maintainers = [
-  {name = "Carsten Ehbrecht", email = "ehbrecht@dkrz.de"},
-  {name = "Trevor James Smith", email = "smith.trevorj@ouranos.ca"},
+  "Carsten Ehbrecht <ehbrecht@dkrz.de>",
+  "Trevor James Smith <smith.trevorj@ouranos.ca>",
 ]
-readme = {file = "README.md", content-type = "text/x-markdown"}
-requires-python = ">=3.10.0"
+readme = "README.md"
 keywords = ["ogcapi-processes", "pygeoapi", "birdhouse", "nandu"]
-license = {file = "LICENSE"}
+license = "LICENSE"
 classifiers = [
   "Development Status :: 3 - Alpha",
   "Intended Audience :: Developers",
@@ -31,7 +29,6 @@ classifiers = [
   "Programming Language :: Python :: 3.12",
   "Topic :: Scientific/Engineering :: Atmospheric Science"
 ]
-dynamic = ["description", "version"]
 
 [tool.poetry.dependencies]
 python = ">=3.10,<4"
@@ -45,6 +42,7 @@ pytest = ">=8.3.4"
 ruff = ">=0.8.1"
 mkdocs-material = ">=9.5.47"
 bump-my-version = ">=0.10.0"
+flit = ">=3.9.0,<4.0"
 
 [tool.ruff]
 line-length = 150
@@ -56,6 +54,11 @@ commit_args = "--no-verify"
 tag = true
 tag_name = "v{new_version}"
 allow_dirty = true
+
+[[tool.bumpversion.files]]
+filename = "pyproject.toml"
+search = "version = \"{current_version}\""
+replace = "version = \"{new_version}\""
 
 [[tool.bumpversion.files]]
 filename = "src/nandu/__version__.py"
