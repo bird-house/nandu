@@ -15,6 +15,7 @@ numpy = "<2"
 pytest = ">=8.3.4"
 ruff = ">=0.8.1"
 mkdocs-material = ">=9.5.47"
+bump-my-version = ">=0.10.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
