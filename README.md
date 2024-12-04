@@ -132,7 +132,7 @@ make docs
 
 ## Release
 
-
+Please check the developer guide.
 
 ## Examples
 
