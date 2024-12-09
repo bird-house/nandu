@@ -43,8 +43,11 @@ Home = "https://github.com/bird-house/nandu"
 dev = [
     "pytest >=8.3.4",
     "ruff",
+    "bump-my-version",
+]
+
+docs = [
     "mkdocs-material",
-    # "bump-my-version",
 ]
 
 [tool.ruff]
