@@ -19,6 +19,4 @@ WORKDIR /code
 COPY . /code
 
 # Install
-# RUN pip3 install poetry
-# RUN poetry install
 RUN python3 -m pip install --no-cache-dir -e . 

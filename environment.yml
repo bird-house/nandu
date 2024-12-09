@@ -4,12 +4,16 @@ channels:
 dependencies:
 - pip
 - python>=3.10,<3.13
-- poetry>=1.8.4
+- flit
 - cleo<2.2.0
 - pygeoapi>=0.18.0
+- pydantic<2.0
 - flask>=2.2.5
 - numpy<2
 # tests
 - pytest
 - ruff
+# docs
 - mkdocs-material
+# deploy
+- bump-my-version

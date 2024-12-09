@@ -29,7 +29,6 @@ on a specific OS.
 ``` console
 $ conda env create -f environment.yml
 $ source activate rook
-§ rm poetry.lock
 $ make clean
 $ make install
 $ conda list -n nandu --explicit > spec-list.txt

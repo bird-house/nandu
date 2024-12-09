@@ -30,7 +30,7 @@ help:
 .PHONY: install
 install:
 	@echo "Installing application ..."
-	@-bash -c 'poetry install --with dev'
+	@-bash -c 'flit install --deps all'
 	@echo "\nStart service with \`make start'"
 
 .PHONY: config
