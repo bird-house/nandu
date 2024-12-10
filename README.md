@@ -57,9 +57,9 @@ conda env create -f environment.yml
 conda activate nandu
 ```
 
-Install the project dependencies using Poetry:
+Install the project dependencies using [Flit](https://flit.pypa.io/):
 ```console
-poetry install
+flit install
 ```
 
 ## Configuration
